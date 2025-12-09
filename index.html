@@ -5,33 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mohammed Ihsan | Portfolio</title>
 
-  <!-- Fonts similar to GridX -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- Abstract animated background -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- TOP NAV -->
   <header class="top-nav">
     <div class="nav-inner container">
+      <!-- Logo -->
       <div class="nav-logo">Ihsan</div>
 
+      <!-- Center nav links -->
       <nav class="nav-links">
-        <a href="#about" class="active">About</a>
-        <a href="work.html">Works</a>
-        <a href="#experience">Contact</a>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="work.html" class="nav-link">Works</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
+      <!-- CTA -->
       <a href="mailto:moihsanirshad@gmail.com" class="nav-cta">Let’s talk</a>
     </div>
   </header>
 
-  <main class="container page">
+  <main class="page container">
 
-    <!-- ROW 1: PHOTO + SELF SUMMARY -->
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <p class="hero-kicker">Creative Designer & AI-Driven Content Specialist</p>
+          <h1 class="hero-title">
+            I design social content<br />
+            that actually gets noticed.
+          </h1>
+          <p class="hero-sub">
+            Crafting scroll-stopping visuals, offer campaigns, and product stories for brands —
+            blending classic design skills with AI-powered workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a href="work.html" class="btn-primary">View my work</a>
+            <a href="resume.pdf" class="btn-ghost" download>Download resume</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-pill">
+              <span class="pill-label">Core Focus</span>
+              <span class="pill-value">Social Media & Campaign Design</span>
+            </div>
+            <div class="hero-pill">
+              <span class="pill-label">Tools</span>
+              <span class="pill-value">Ps · Ai · Figma · Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-tag-card">
+            <p class="hero-tag-label">Currently</p>
+            <p class="hero-tag-main">Graphic Designer at iDealz Lanka</p>
+            <p class="hero-tag-sub">Designing daily content for a leading smartphone retailer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELF-SUMMARY + PHOTO (GridX style) -->
     <section id="about" class="section">
       <div class="grid-hero">
 
@@ -45,25 +90,29 @@
 
         <!-- SELF SUMMARY HEADING + CARD -->
         <div class="hero-right">
-          <h1 class="self-heading">✶ SELF-SUMMARY ✶</h1>
+          <h2 class="self-heading">✶ SELF-SUMMARY ✶</h2>
 
           <div class="card summary-card">
-            <h2 class="summary-name">Mohammed Ihsan</h2>
+            <h3 class="summary-name">Mohammed Ihsan</h3>
+
             <p class="summary-text">
-              I am a Sri Lanka–based <strong>Graphic Designer & Creative Content Designer</strong> with a focus on
-              social media design, campaign visuals, paid-ad creatives and product-driven content for tech and
-              education brands.
+              A <strong>Graphic Designer & Creative Content Designer</strong> specializing in social media design,
+              campaign visuals, paid-ad creatives, product-focused content, and modern brand storytelling. I bring a
+              fast, detail-oriented workflow with a strong understanding of what performs well across digital platforms.
             </p>
+
             <p class="summary-text">
-              At <strong>iDealz Lanka (Pvt) Ltd</strong>, I design daily posts, story designs, offer banners and
-              campaign drops for one of Sri Lanka’s leading smartphone retailers — using tools like
-              <strong>Photoshop, Illustrator, Figma, Canva</strong> and AI tools such as
-              <strong>Gemini, Firefly, Veo 3 &amp; ChatGPT</strong> to speed up concepting and video work.
+              At <strong>iDealz Lanka (Pvt) Ltd</strong>, I design daily content including offer campaigns, product
+              visuals, story layouts, event promotions, and launch drops for one of Sri Lanka’s leading smartphone
+              retailers. I work hands-on with <strong>Photoshop, Illustrator, Figma, Canva</strong> and integrate
+              advanced AI tools like <strong>Gemini, Firefly, Veo 3</strong> and <strong>ChatGPT</strong> to enhance
+              concept development, creative direction, and short-form video production.
             </p>
+
             <p class="summary-text">
-              I’m currently reading for a <strong>Postgraduate Diploma in Digital Marketing</strong>, aiming to become
-              a hybrid <strong>Creative + Marketing</strong> professional for global teams in Dubai, Qatar, Singapore,
-              UK, Europe, Australia and Canada.
+              I am currently pursuing a <strong>Postgraduate Diploma in Digital Marketing</strong>, building myself into a
+              modern <strong>Creative + Marketing</strong> hybrid — able to design with strategy, communicate with
+              clarity, and deliver content that aligns with brand objectives while maintaining high visual impact.
             </p>
           </div>
         </div>
@@ -71,7 +120,44 @@
       </div>
     </section>
 
-    <!-- ROW 2: EXPERIENCE + EDUCATION -->
+    <!-- WHAT I DO / CAPABILITIES -->
+    <section id="services" class="section">
+      <div class="section-header">
+        <p class="section-label">WHAT I DO</p>
+        <h2 class="section-title">Capabilities</h2>
+        <p class="section-sub">
+          A mix of design, content and digital skills that I use to support campaigns and brands.
+        </p>
+      </div>
+
+      <div class="grid-three capabilities-grid">
+        <div class="card capability-card">
+          <p class="cap-title">Social Media Visuals</p>
+          <p class="cap-text">
+            Static posts, story designs, carousels and reels covers tailored for Instagram and Facebook, optimized for engagement and clarity.
+          </p>
+          <p class="cap-tags">Posts · Stories · Carousels</p>
+        </div>
+
+        <div class="card capability-card">
+          <p class="cap-title">Offer & Campaign Design</p>
+          <p class="cap-text">
+            Launch visuals, offer drops, seasonal campaigns and product pushes that fit brand guidelines and sales objectives.
+          </p>
+          <p class="cap-tags">Launches · Offers · Events</p>
+        </div>
+
+        <div class="card capability-card">
+          <p class="cap-title">AI-Assisted Content & Video</p>
+          <p class="cap-text">
+            Using Gemini, Firefly, Veo 3 and ChatGPT to explore concepts, build variations and support short-form video edits.
+          </p>
+          <p class="cap-tags">Concepts · Prompts · Short-form</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
     <section id="experience" class="section">
       <div class="grid-two">
         <!-- EXPERIENCE CARD -->
@@ -86,7 +172,7 @@
 
           <div class="info-block">
             <p class="info-year">2023 – 2024</p>
-            <p class="info-role">Social Media & Design Executive</p>
+            <p class="info-role">Social Media &amp; Design Executive</p>
             <p class="info-company">European Nations Campus · Sri Lanka</p>
           </div>
 
@@ -109,7 +195,7 @@
 
           <div class="info-block">
             <p class="info-year">2024</p>
-            <p class="info-role">Diploma in Graphic Design & Digital Marketing</p>
+            <p class="info-role">Diploma in Graphic Design &amp; Digital Marketing</p>
             <p class="info-company">Luxway Campus</p>
           </div>
 
@@ -122,7 +208,7 @@
       </div>
     </section>
 
-    <!-- ROW 3: PROFILES / LET'S WORK / CREDENTIALS -->
+    <!-- CTA ROW: PROFILES / LET’S WORK / CREDENTIALS -->
     <section id="contact" class="section section-bottom">
       <div class="grid-three">
 
@@ -131,6 +217,7 @@
           <div class="profiles-icons">
             <a href="https://www.behance.net/ihsandesigner" target="_blank" class="profile-icon">Be</a>
             <a href="https://www.linkedin.com/in/ihsandesigner" target="_blank" class="profile-icon">in</a>
+            <a href="https://www.instagram.com/" target="_blank" class="profile-icon">IG</a>
           </div>
           <div class="profiles-meta">
             <p class="small-label">STAY WITH ME</p>
@@ -159,34 +246,27 @@
     </section>
   </main>
 
-<footer class="footer">
-  <div class="footer-inner container">
-    
-    <!-- Center Logo -->
-    <div class="footer-logo">Ihsan</div>
+  <!-- FOOTER (centered) -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">Ihsan</div>
 
-    <!-- Centered Navigation -->
-    <nav class="footer-nav">
-      <a href="index.html">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="work.html">Works</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="work.html">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <!-- Centered Copyright -->
-    <p class="footer-copy">
-      © All rights reserved by <span class="footer-brand">Mohammed Ihsan</span>
-    </p>
-
-  </div>
-</footer>
-
+      <p class="footer-copy">
+        © All rights reserved by <span class="footer-brand">Mohammed Ihsan</span>
+      </p>
+    </div>
+  </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year")?.textContent = new Date().getFullYear();
   </script>
-
   <script src="bg.js"></script>
-  
 </body>
 </html>
