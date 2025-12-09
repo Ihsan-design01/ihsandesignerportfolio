@@ -30,7 +30,6 @@ for (let i = 0; i < BLOB_COUNT; i++) {
 }
 
 function draw() {
-  // subtle fade so trails look smooth
   ctx.fillStyle = "rgba(5, 6, 7, 0.42)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -38,7 +37,6 @@ function draw() {
     b.x += b.vx;
     b.y += b.vy;
 
-    // bounce softly off edges
     if (b.x - b.r < -100 || b.x + b.r > canvas.width + 100) b.vx *= -1;
     if (b.y - b.r < -100 || b.y + b.r > canvas.height + 100) b.vy *= -1;
 
