@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Works | Mohammed Ihsan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="work.css" />
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <header class="top-nav">
+    <div class="nav-inner container">
+      <div class="nav-logo">Ihsan</div>
+
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="work.html" class="active">Works</a>
+        <a href="index.html#experience">Contact</a>
+      </nav>
+
+      <a href="mailto:moihsanirshad@gmail.com" class="nav-cta">Let’s talk</a>
+    </div>
+  </header>
+
+  <main class="container works-page">
+    <header class="works-header">
+      <p class="works-label">WORKS</p>
+      <h1 class="works-title">Selected social media posts</h1>
+      <p class="works-sub">
+        A snapshot of the posts, offers and campaign visuals I design for tech and education brands.
+      </p>
+    </header>
+
+    <section class="works-grid">
+      <!-- replace these with real designs -->
+      <article class="work-item">
+        <img src="british qual.jpeg" alt="Post 1" />
+      </article>
+      <article class="work-item">
+        <img src="17.jpeg" alt="Post 2" />
+      </article>
+      <article class="work-item">
+        <img src="19.jpeg" alt="Post 3" />
+      </article>
+      <article class="work-item">
+        <img src="walima.jpg" alt="Post 4" />
+      </article>
+      <article class="work-item">
+        <img src="mehendi.jpeg" alt="Post 5" />
+      </article>
+      <article class="work-item">
+        <img src="birthday.jpeg" alt="Post 6" />
+      </article>
+    </section>
+
+    <div class="works-more">
+      <a href="https://www.behance.net/ihsandesigner" target="_blank">
+        View full projects on Behance →
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">Ihsan</div>
+      <nav class="footer-nav">
+        <a href="index.html#about">About</a>
+        <a href="work.html">Works</a>
+        <a href="index.html#experience">Contact</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Mohammed Ihsan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+<script src="bg.js"></script>
+
+</body>
+</html>
